@@ -124,8 +124,14 @@ The application is built with RESTful APIs.
 **http://localhost:9090/swagger-ui/index.html#/**
 
 # **Security Notes**
-**ROLE_ADMIN ⇒ Can create tour packages.
-ROLE_SELLER ⇒ Can view tour packages.
-All endpoints require authentication via Spring Security.**
+       -> ROLE_ADMIN ⇒ Can create tour packages.
+              username: admin
+              password: admin123
+              
+       -> ROLE_SELLER ⇒ Can view tour packages.
+              username: seller
+              password: seller123
+              
+       -> All endpoints require authentication via Spring Security.
         
         
