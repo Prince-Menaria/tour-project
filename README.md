@@ -16,7 +16,7 @@ The application is built with RESTful APIs.
 ### **1. Create Tour Package**
 
         * Endpoint:
-        POST /create-tour-package
+        POST /api/create-tour-package
 
         * Description:
         Creates a new tour package in the system.
@@ -44,7 +44,8 @@ The application is built with RESTful APIs.
         }
 
 ### **2. Get Tour Package by ID**
-       * Endpoint: GET /get-tour-package-by-id?id={id}
+       * Endpoint: 
+       GET /api/get-tour-package-by-id?id={id}
 
         * Description: Retrieves details of a specific tour package by its unique ID.
 
@@ -71,7 +72,8 @@ The application is built with RESTful APIs.
 
 ### **3. Get All Tour Packages**
 
-        *  Endpoint: GET /get-all-tour-packages
+        *  Endpoint: 
+        GET /api/get-all-tour-packages
         
         * Description: Retrieves a list of all available tour packages in the system.
         
@@ -91,5 +93,39 @@ The application is built with RESTful APIs.
                     "actualPrice": 0,
                     "discountedPrice": 0
                 }
+
+### **4. Get Tour Package by Location**
+
+       * Endpoint: 
+       GET /api/get-tour-package-by-location?location={location}
+
+       * Description: Retrieves a tour package available in a specific location.
+
+       * Access Control: Requires ROLE_SELLER authority.
+
+       * Query Parameter: location (String, required) — The location of the tour package.
+
+       * Response:
+       200 OK
+       Body Example:
+       {
+              "id": 0,
+              "title": "string",
+              "description": "string",
+              "duration": "string",
+              "location": "string",
+              "image": "string",
+              "discountInPercentage": 0,
+              "actualPrice": 0,
+              "discountedPrice": 0
+       }
+
+# **Swagger UI Url**
+**http://localhost:9090/swagger-ui/index.html#/**
+
+# **Security Notes**
+**ROLE_ADMIN ⇒ Can create tour packages.
+ROLE_SELLER ⇒ Can view tour packages.
+All endpoints require authentication via Spring Security.**
         
         
