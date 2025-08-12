@@ -1,0 +1,547 @@
+{
+	"info": {
+		"_postman_id": "fd3e042e-ba19-412a-835d-ae0089ad9b78",
+		"name": "Tour Managment Api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "47501088",
+		"_collection_link": "https://codingpratices-1630462.postman.co/workspace/Prince's-Workspace~f4907d53-c9e8-47ef-859a-77a2c0a283f4/collection/47501088-fd3e042e-ba19-412a-835d-ae0089ad9b78?action=share&source=collection_link&creator=47501088"
+	},
+	"item": [
+		{
+			"name": "Get all tour packages",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "seller123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "seller",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/api/get-all-tour-packages",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"api",
+						"get-all-tour-packages"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get all tour packages",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/get-all-tour-packages",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"get-all-tour-packages"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 12 Aug 2025 08:14:27 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"title\": \"demo titel\",\n        \"description\": \"des\",\n        \"duration\": \"5.00\",\n        \"location\": \"jodh\",\n        \"image\": \"image url\",\n        \"discountInPercentage\": 50,\n        \"actualPrice\": 1000,\n        \"discountedPrice\": 200\n    },\n    {\n        \"id\": 2,\n        \"title\": \"test 2\",\n        \"description\": \"test des. 2\",\n        \"duration\": \"2.00\",\n        \"location\": \"uda\",\n        \"image\": \"demo image url\",\n        \"discountInPercentage\": 40,\n        \"actualPrice\": 500,\n        \"discountedPrice\": 100\n    }\n]"
+				},
+				{
+					"name": "Get all tour packages",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/get-all-tour-packages",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"get-all-tour-packages"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 12 Aug 2025 08:14:27 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"title\": \"demo titel\",\n        \"description\": \"des\",\n        \"duration\": \"5.00\",\n        \"location\": \"jodh\",\n        \"image\": \"image url\",\n        \"discountInPercentage\": 50,\n        \"actualPrice\": 1000,\n        \"discountedPrice\": 200\n    },\n    {\n        \"id\": 2,\n        \"title\": \"test 2\",\n        \"description\": \"test des. 2\",\n        \"duration\": \"2.00\",\n        \"location\": \"uda\",\n        \"image\": \"demo image url\",\n        \"discountInPercentage\": 40,\n        \"actualPrice\": 500,\n        \"discountedPrice\": 100\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Get-tour-package-by-location",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "seller123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "seller",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/api/get-tour-package-by-location?location=Jodh",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"api",
+						"get-tour-package-by-location"
+					],
+					"query": [
+						{
+							"key": "location",
+							"value": "Jodh"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get-tour-package-by-location",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/api/get-tour-package-by-location?location=Jodh",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"api",
+								"get-tour-package-by-location"
+							],
+							"query": [
+								{
+									"key": "location",
+									"value": "Jodh"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 12 Aug 2025 16:35:21 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 2,\n    \"title\": \"Jodhpur Trek Adventure\",\n    \"description\": \"14-day trek through the Jodhpur\",\n    \"duration\": \"14Days/13Nights\",\n    \"location\": \"Jodh\",\n    \"image\": \"https://images.unsplash.com/photo-1598275277521-1885382d523a\",\n    \"discountInPercentage\": 18,\n    \"actualPrice\": 1400,\n    \"discountedPrice\": 900\n}"
+				}
+			]
+		},
+		{
+			"name": "Get-tour-package-by-id",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "seller123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "seller",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9090/api/get-tour-package-by-id?id=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"api",
+						"get-tour-package-by-id"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get-tour-package-by-id",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9090/api/get-tour-package-by-id?id=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"api",
+								"get-tour-package-by-id"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 12 Aug 2025 16:36:37 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"title\": \"Himalayan Trek Adventure\",\n    \"description\": \"14-day trek through the Himalayas\",\n    \"duration\": \"14Days/13Nights\",\n    \"location\": \"Himalayan\",\n    \"image\": \"https://images.unsplash.com/photo-1598275277521-1885382d523a\",\n    \"discountInPercentage\": 17,\n    \"actualPrice\": 1200,\n    \"discountedPrice\": 1000\n}"
+				}
+			]
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "admin123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n      \"title\": \"Ajmer Trek Adventure\",\r\n      \"description\": \"Ajmer Trek Adventure tour\",\r\n      \"duration\": \"14Days/13Nights\",\r\n      \"location\": \"ajm\",\r\n      \"image\": \"ajm image url\",\r\n      \"discountInPercentage\": 10,\r\n      \"actualPrice\": 1500.0,\r\n      \"discountedPrice\": 500.0\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9090/api/create-tour-package",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"api",
+						"create-tour-package"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n      \"title\": \"Ajmer Trek Adventure\",\r\n      \"description\": \"Ajmer Trek Adventure tour\",\r\n      \"duration\": \"14Days/13Nights\",\r\n      \"location\": \"ajm\",\r\n      \"image\": \"ajm image url\",\r\n      \"discountInPercentage\": 10,\r\n      \"actualPrice\": 1500.0,\r\n      \"discountedPrice\": 500.0\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9090/api/create-tour-package",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9090",
+							"path": [
+								"api",
+								"create-tour-package"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 12 Aug 2025 16:39:41 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Tour package created successfully\"\n}"
+				}
+			]
+		}
+	]
+}
